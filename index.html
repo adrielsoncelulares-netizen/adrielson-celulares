@@ -3,35 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Assistência técnica de celulares em Porto Velho - RO. Troca de tela, bateria, conector de carga e mais. Orçamento grátis pelo WhatsApp.">
+<meta name="description" content="Assistência técnica de celulares em Porto Velho - RO há mais de 10 anos. Troca de tela, bateria, conector de carga e mais. Orçamento grátis pelo WhatsApp.">
 <meta property="og:title" content="Adrielson Celulares - Assistência Técnica em Porto Velho">
-<meta property="og:description" content="Assistência técnica de celulares em Porto Velho - RO. Troca de tela, bateria, conector de carga e mais. Orçamento grátis pelo WhatsApp.">
+<meta property="og:description" content="Assistência técnica de celulares em Porto Velho - RO há mais de 10 anos. Troca de tela, bateria, conector de carga e mais. Orçamento grátis pelo WhatsApp.">
+<meta property="og:image" content="fotos/logo.jpg">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0C3B36">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230C3B36'/%3E%3Crect x='10' y='5' width='12' height='22' rx='3' fill='none' stroke='%23F2A81D' stroke-width='2.5'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="fotos/logo.jpg">
 <title>Adrielson Celulares</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
-/* Layout: placa de circuito — hero com celular sendo "consertado", serviços em grade, passos reais, CTA fixo para WhatsApp */
+/* Layout: vitrine de bancada — hero com fotos reais, prova (antes/depois, vídeos, galeria), serviços clicáveis, CTA fixo de WhatsApp. Cores da marca: preto + amarelo */
 :root{
-  --bg:#F2F5F1; --surface:#FFFFFF; --ink:#0F2422; --muted:#4B605C;
-  --board:#0C3B36; --board-2:#124C45; --solder:#F2A81D; --solder-ink:#2A1A00;
-  --line:#D5DED9; --zap:#1FA855;
+  --bg:#F5F4EF; --surface:#FFFFFF; --ink:#151515; --muted:#57544B;
+  --board:#111111; --board-2:#1B1B1B; --solder:#F7C600; --solder-ink:#1A1400;
+  --line:#E3E0D6; --zap:#1FA855; --hero-ink:#F4F2EA; --hero-muted:#BDB9AC;
   --wa-bg:#EFE7DD; --wa-top:#0B5C4E; --wa-in:#FFFFFF; --wa-out:#D9FDD3; --wa-out-ink:#0F2422; --wa-dot:rgba(15,36,34,.07); --wa-chip:#E1F2FB;
   --display:"Unbounded","Arial Black",system-ui,sans-serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0A1715; --surface:#10221F; --ink:#E7F0EC; --muted:#9DB3AD;
-  --board:#0E2F2B; --board-2:#15403A; --solder:#F5B63A; --solder-ink:#2A1A00;
-  --line:#1F3A35; --zap:#2BC266; --wa-bg:#0B141A; --wa-top:#1F2C33; --wa-in:#202C33; --wa-out:#005C4B; --wa-out-ink:#E9F5EF; --wa-dot:rgba(255,255,255,.04); --wa-chip:#182229; color-scheme:dark}}
+  --bg:#0D0D0C; --surface:#171716; --ink:#F2F0E8; --muted:#A9A598;
+  --board:#080808; --board-2:#141414; --solder:#FFD21F; --solder-ink:#1A1400;
+  --line:#2A2926; --zap:#2BC266; --wa-bg:#0B141A; --wa-top:#1F2C33; --wa-in:#202C33; --wa-out:#005C4B; --wa-out-ink:#E9F5EF; --wa-dot:rgba(255,255,255,.04); --wa-chip:#182229; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0A1715; --surface:#10221F; --ink:#E7F0EC; --muted:#9DB3AD;
-  --board:#0E2F2B; --board-2:#15403A; --solder:#F5B63A; --solder-ink:#2A1A00;
-  --line:#1F3A35; --zap:#2BC266; --wa-bg:#0B141A; --wa-top:#1F2C33; --wa-in:#202C33; --wa-out:#005C4B; --wa-out-ink:#E9F5EF; --wa-dot:rgba(255,255,255,.04); --wa-chip:#182229; color-scheme:dark}
+  --bg:#0D0D0C; --surface:#171716; --ink:#F2F0E8; --muted:#A9A598;
+  --board:#080808; --board-2:#141414; --solder:#FFD21F; --solder-ink:#1A1400;
+  --line:#2A2926; --zap:#2BC266; --wa-bg:#0B141A; --wa-top:#1F2C33; --wa-in:#202C33; --wa-out:#005C4B; --wa-out-ink:#E9F5EF; --wa-dot:rgba(255,255,255,.04); --wa-chip:#182229; color-scheme:dark}
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55}
@@ -41,26 +42,26 @@ a{color:inherit}
 .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--solder)}
 
 /* HERO */
-.hero{background:var(--board);color:#EAF4F0;position:relative;overflow:hidden}
+.hero{background:var(--board);color:var(--hero-ink);position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;opacity:.18;pointer-events:none;
   background-image:
-   linear-gradient(90deg,transparent 0 47px,#F2A81D 47px 49px,transparent 49px),
-   linear-gradient(0deg,transparent 0 71px,#5FD3B8 71px 72px,transparent 72px);
+   linear-gradient(90deg,transparent 0 47px,#F7C600 47px 49px,transparent 49px),
+   linear-gradient(0deg,transparent 0 71px,#ffffff 71px 72px,transparent 72px);
   background-size:96px 96px,96px 144px}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center;padding-block:56px 64px}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:15px;margin-bottom:36px}
 .brand i{width:12px;height:12px;border-radius:50%;background:var(--solder);box-shadow:0 0 0 4px rgba(242,168,29,.25)}
 .hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;letter-spacing:-.02em}
 .hero h1 em{font-style:normal;color:var(--solder)}
-.hero p.lead{font-size:19px;max-width:34ch;color:#C9DDD7;margin:18px 0 28px}
+.hero p.lead{font-size:19px;max-width:34ch;color:var(--hero-muted);margin:18px 0 28px}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:17px;border:0;cursor:pointer;transition:transform .15s ease}
 .btn:hover{transform:translateY(-2px)}
 .btn:focus-visible{outline:3px solid var(--solder);outline-offset:3px}
 .btn-zap{background:var(--zap);color:#fff}
-.btn-ghost{background:transparent;color:#EAF4F0;border:1.5px solid rgba(234,244,240,.35)}
+.btn-ghost{background:transparent;color:var(--hero-ink);border:1.5px solid rgba(244,242,234,.35)}
 .btn svg{width:22px;height:22px;flex:none}
-.trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:26px;font-family:var(--mono);font-size:13px;color:#A9C6BE}
+.trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:26px;font-family:var(--mono);font-size:13px;color:var(--hero-muted)}
 .trust span::before{content:"✓ ";color:var(--solder)}
 
 /* phone */
@@ -71,7 +72,7 @@ a{color:inherit}
 .batt{width:96px;height:44px;border:3px solid #EAF4F0;border-radius:10px;position:relative;padding:4px}
 .batt::after{content:"";position:absolute;right:-9px;top:12px;width:6px;height:14px;background:#EAF4F0;border-radius:0 3px 3px 0}
 .batt b{display:block;height:100%;border-radius:5px;background:var(--solder);width:100%;animation:charge 6s ease-in-out infinite}
-.pct{font-family:var(--mono);color:#EAF4F0;font-size:15px}
+.pct{font-family:var(--mono);color:var(--hero-ink);font-size:15px}
 .status{font-family:var(--display);color:var(--solder);font-size:13px;font-weight:700}
 @keyframes float{50%{transform:translateY(-10px) rotate(-1.5deg)}}
 @keyframes heal{0%,15%{opacity:1}45%,100%{opacity:0}}
@@ -103,13 +104,13 @@ section{padding-block:64px}
 .chip:focus-visible{outline:3px solid var(--solder);outline-offset:2px}
 
 /* steps */
-.steps{background:var(--board-2);color:#EAF4F0}
-.steps .sec-head p{color:#B5CEC7}
+.steps{background:var(--board-2);color:var(--hero-ink)}
+.steps .sec-head p{color:var(--hero-muted)}
 .step-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;counter-reset:s;list-style:none;padding:0;margin:0}
 .step-list li{border-top:2px solid var(--solder);padding-top:18px;counter-increment:s}
 .step-list li::before{content:counter(s);font-family:var(--display);font-size:40px;font-weight:800;color:var(--solder);display:block;line-height:1;margin-bottom:10px}
 .step-list h3{font-size:18px;margin-bottom:6px}
-.step-list p{margin:0;color:#C3D8D1;font-size:15.5px}
+.step-list p{margin:0;color:var(--hero-muted);font-size:15.5px}
 
 /* about */
 .about{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
@@ -182,6 +183,107 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
 @keyframes okpop{0%,100%{transform:scale(1)}10%{transform:scale(1.18)}20%{transform:scale(1)}}
 @keyframes bob{50%{transform:translateY(-4px)}}
 
+/* logo */
+.brand{gap:14px;font-family:var(--body);font-weight:500}
+.brand-mark{width:54px;height:54px;flex:none}
+.brand span{display:flex;flex-direction:column;font-family:var(--display);font-size:15px;letter-spacing:.06em;line-height:1.2}
+.brand b{font-weight:800}
+.brand small{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--solder);font-weight:500;margin-top:3px}
+
+/* tabela de serviços */
+.tabela{background:var(--surface);border-block:1px solid var(--line)}
+.cats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.cat h3{font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding-bottom:10px;border-bottom:2px solid var(--solder);margin-bottom:4px}
+.svc-list{list-style:none;margin:0;padding:0}
+.svc-row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;border-radius:6px;transition:background .15s}
+.svc-row:hover{background:var(--bg)}
+.svc-row:focus-visible{outline:3px solid var(--solder);outline-offset:2px}
+.svc-txt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.svc-txt b{font-size:16.5px}
+.svc-txt span{font-size:14.5px;color:var(--muted);line-height:1.45}
+.svc-go{flex:none;font-weight:700;font-size:13.5px;color:var(--zap);white-space:nowrap}
+
+/* local */
+.local-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.fact strong a{color:inherit}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px}
+
+/* hero real */
+.hero{background:var(--board)}
+.brand{margin-bottom:22px}
+.brand img{width:min(300px,78vw);height:auto;display:block;border-radius:10px}
+.kicker{display:inline-block;font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--solder);margin-bottom:12px}
+.stack{position:relative;height:440px;min-width:0}
+.ph{position:absolute;margin:0;width:46%;max-width:230px;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 24px 50px rgba(0,0,0,.5);border:3px solid #fff}
+.ph img{display:block;width:100%;height:auto;aspect-ratio:9/15;object-fit:cover}
+.ph figcaption{position:absolute;left:8px;bottom:8px;right:8px;background:rgba(0,0,0,.72);color:#fff;font-size:12.5px;font-weight:700;padding:5px 8px;border-radius:8px}
+.ph-a{left:0;top:40px;transform:rotate(-7deg)}
+.ph-b{left:27%;top:0;z-index:2;transform:rotate(1deg)}
+.ph-c{right:0;top:56px;transform:rotate(8deg)}
+.badge-real{position:absolute;z-index:3;left:50%;bottom:0;transform:translateX(-50%) rotate(-3deg);background:var(--solder);color:var(--solder-ink);padding:8px 16px;border-radius:999px;font-size:14px;white-space:nowrap;box-shadow:0 8px 20px rgba(0,0,0,.35)}
+@media (prefers-reduced-motion:no-preference){.ph{animation:rise .7s ease-out both}.ph-b{animation-delay:.12s}.ph-c{animation-delay:.24s}}
+@keyframes rise{from{translate:0 24px}to{translate:0 0}}
+
+/* prova */
+.proof{background:var(--solder);color:var(--solder-ink)}
+.proof-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding-block:22px}
+.proof-row div{display:flex;flex-direction:column;align-items:center;text-align:center}
+.proof b{font-family:var(--display);font-size:clamp(24px,3.4vw,34px);font-weight:800;line-height:1}
+.proof span{font-size:14px;font-weight:600;margin-top:4px}
+
+/* antes e depois */
+.ad-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ad-card{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.ad-img{all:unset;cursor:zoom-in;display:block}
+.ad-img:focus-visible{outline:3px solid var(--solder);outline-offset:-3px}
+.ad-img img{display:block;width:100%;height:auto;aspect-ratio:9/13;object-fit:cover}
+.ad-card figcaption{padding:14px 16px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.ad-card b{font-size:16px;line-height:1.3}
+.ad-card span{font-size:14px;color:var(--muted)}
+.ad-cta{margin-top:auto;padding-top:8px;font-weight:700;font-size:14.5px;color:var(--zap);text-decoration:none}
+
+/* vídeos */
+.vids{background:var(--board);color:var(--hero-ink)}
+.vids .sec-head p{color:var(--hero-muted)}
+.vid-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:stretch}
+.vid{margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.vid video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:18px;background:#000;border:2px solid #2b2b2b}
+.vid figcaption{font-size:14px;color:var(--hero-muted)}
+.vid-cta{border:2px solid var(--solder);border-radius:18px;padding:24px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.vid-cta b{font-family:var(--display);font-size:24px;line-height:1.15}
+.vid-cta span{color:var(--hero-muted)}
+
+/* galeria */
+.gfilters{margin-bottom:18px}
+.gal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.tile{all:unset;position:relative;cursor:zoom-in;border-radius:14px;overflow:hidden;background:#000;display:block}
+.tile img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;transition:transform .3s}
+.tile:hover img{transform:scale(1.05)}
+.tile:focus-visible{outline:3px solid var(--solder);outline-offset:2px}
+.tile span{position:absolute;left:0;right:0;bottom:0;padding:26px 10px 10px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font-weight:700;font-size:13.5px;line-height:1.3}
+.tile[hidden]{display:none}
+
+/* lightbox */
+.lb[hidden],.tile[hidden]{display:none!important}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.86);display:grid;place-items:center;padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb-box{position:relative;max-width:480px;width:100%;display:flex;flex-direction:column;gap:10px}
+.lb-box img{width:100%;max-height:70vh;object-fit:contain;border-radius:14px;background:#000}
+.lb-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;color:#fff}
+.lb-x{position:absolute;top:-6px;right:-6px;z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#111;font-size:26px;line-height:1;cursor:pointer}
+
+/* local */
+.local-side{display:flex;flex-direction:column;gap:14px;min-width:0}
+.fachada{width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+
+/* barra fixa no celular */
+.mbar{display:none}
+@media (max-width:720px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--board);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .mbar a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:12px;background:var(--zap);color:#fff;font-weight:700;text-decoration:none;font-size:15.5px}
+  .mbar a.alt{background:var(--solder);color:var(--solder-ink)}
+  .float-zap{display:none}
+}
+
 /* floating */
 .float-zap{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;width:60px;height:60px;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25);animation:pulse 2.4s ease-out infinite}
 .float-zap svg{width:30px;height:30px}
@@ -191,9 +293,13 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
   .hero .wrap{grid-template-columns:1fr;padding-block:36px 48px}
   .phone{width:min(180px,55vw)}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .step-list,.about,.chat-sec .wrap,.busca .wrap{grid-template-columns:1fr}
+  .step-list,.about,.chat-sec .wrap,.busca .wrap,.cats,.local-grid{grid-template-columns:1fr}
+  .ad-grid,.gal{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vid-row{grid-template-columns:repeat(2,minmax(0,1fr))}.vid-cta{grid-column:1/-1}
+  .stack{height:360px;max-width:440px;width:100%;justify-self:center}
+  .proof-row{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
 }
-@media (max-width:520px){.grid{grid-template-columns:1fr}.wa-body{min-height:0}.final{padding:28px 22px}}
+@media (max-width:520px){.stack{height:300px}.ph{width:44%}.ad-grid{grid-template-columns:1fr 1fr;gap:10px}.ad-card figcaption{padding:10px}.ad-card span{display:none}.svc-go{display:none}.brand-mark{width:44px;height:44px}.grid{grid-template-columns:1fr}.wa-body{min-height:0}.final{padding:28px 22px}}
 @media (prefers-reduced-motion:reduce){.wa.play .step{opacity:1!important;transform:none!important}*,*::before,*::after{animation:none!important;transition:none!important}.crack{opacity:0}}
 </style>
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -203,7 +309,8 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
 <header class="hero">
   <div class="wrap">
     <div>
-      <div class="brand"><i></i>Adrielson Celulares</div>
+      <div class="brand"><img src="fotos/logo.jpg" alt="Adrielson Celulares, assistência técnica" width="650" height="250"></div>
+      <span class="kicker">Assistência técnica em Porto Velho – RO</span>
       <h1>Celular quebrado? <em>Eu resolvo.</em></h1>
       <p class="lead">Conserto de celular em Porto Velho – Rondônia, com preço justo, peça de qualidade e garantia no serviço.</p>
       <div class="cta-row">
@@ -218,18 +325,24 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
       </div>
       <div class="trust"><span>+10 anos de experiência</span><span>+22 mil celulares consertados</span><span>Orçamento grátis</span><span>Busco seu celular</span><span>Atendo também à noite</span><span>Garantia no serviço</span></div>
     </div>
-    <div class="phone-box" aria-hidden="true">
-      <div class="phone">
-        <div class="screen">
-          <svg class="crack" viewBox="0 0 100 200" preserveAspectRatio="none"><path d="M62 0 L55 38 L70 55 L48 88 L60 104 L38 140 L52 160 L40 200 M55 38 L30 50 M48 88 L78 98 M38 140 L14 150" stroke="#CFE7E0" stroke-width="1.4" fill="none" opacity=".85"/></svg>
-          <div class="batt"><b></b></div>
-          <div class="pct">consertado ✓</div>
-          <div class="status">Pronto pra usar</div>
-        </div>
-      </div>
+    <div class="stack" aria-label="Fotos de consertos reais">
+      <figure class="ph ph-a"><img src="fotos/7206d6f9.jpg" alt="iPhone 12 com frontal nova, em frente à parede da loja" width="720" height="1280"><figcaption>Frontal iPhone 12</figcaption></figure>
+      <figure class="ph ph-b"><img src="fotos/414edb50.jpg" alt="iPhone funcionando na bancada da Adrielson Celulares" width="720" height="1262"><figcaption>Entregue funcionando</figcaption></figure>
+      <figure class="ph ph-c"><img src="fotos/7a0c2205.jpg" alt="iPhone 11 aberto durante troca de bateria" width="720" height="1280"><figcaption>Bateria iPhone 11</figcaption></figure>
+      <div class="badge-real"><b>Fotos reais</b> da nossa bancada</div>
     </div>
+</div>
   </div>
 </header>
+<div class="proof">
+  <div class="wrap proof-row">
+    <div><b>+10</b><span>anos de bancada</span></div>
+    <div><b>+22 mil</b><span>celulares consertados</span></div>
+    <div><b>9</b><span>marcas atendidas</span></div>
+    <div><b>R$ 0</b><span>pelo orçamento</span></div>
+  </div>
+</div>
+
 
 <main>
   <section id="servicos">
@@ -243,7 +356,7 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
         <span class="brands-lbl">1. Marca do celular</span>
         <div class="chips"><button type="button" class="chip" aria-pressed="false" data-marca="iPhone">iPhone</button><button type="button" class="chip" aria-pressed="false" data-marca="Samsung">Samsung</button><button type="button" class="chip" aria-pressed="false" data-marca="Motorola">Motorola</button><button type="button" class="chip" aria-pressed="false" data-marca="Xiaomi">Xiaomi</button><button type="button" class="chip" aria-pressed="false" data-marca="Realme">Realme</button><button type="button" class="chip" aria-pressed="false" data-marca="Infinix">Infinix</button><button type="button" class="chip" aria-pressed="false" data-marca="Oppo">Oppo</button><button type="button" class="chip" aria-pressed="false" data-marca="LG">LG</button><button type="button" class="chip" aria-pressed="false" data-marca="Outra marca">Outra marca</button></div>
       </div>
-      <span class="brands-lbl" style="display:block;margin:22px 0 12px">2. Toque no problema</span>
+      <span class="brands-lbl" style="display:block;margin:22px 0 12px">2. Toque no problema · <a href="#tabela" style="color:var(--ink)">ver lista completa com 20 serviços</a></span>
       <div class="grid">
         <a class="card js-svc" data-msg="meu {cel} não liga. Quero deixar ele aí para avaliar." href="#contato" target="_blank" rel="noopener">
           <div class="ico"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M12 8v4M9.5 9.5a4 4 0 1 0 5 0"/></svg></div>
@@ -299,6 +412,199 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
           <p>Não achou aqui? Conta o que aconteceu que eu avalio.</p>
           <span class="go">Chamar no WhatsApp →</span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="antes-depois" class="ad">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Antes e depois</span>
+        <h2>Chegou quebrado. Saiu novo.</h2>
+        <p>Consertos reais feitos aqui na bancada, em Porto Velho. Toque na foto para ver maior.</p>
+      </div>
+      <div class="ad-grid">
+        <figure class="ad-card"><button type="button" class="ad-img js-tile" data-src="fotos/cdc47c8d.jpg" data-cap="iPhone 14 Pro: antes, durante e depois" data-msg="iPhone 14 Pro: antes, durante e depois"><img src="fotos/cdc47c8d.jpg" alt="iPhone 14 Pro: antes, durante e depois" loading="lazy" width="720" height="1280"></button>
+          <figcaption><b>iPhone 14 Pro: antes, durante e depois</b><span>Troca da tampa traseira</span><a class="ad-cta js-svcmsg" data-msg="iPhone 14 Pro" href="#contato" target="_blank" rel="noopener">Quero um orçamento igual →</a></figcaption></figure>
+        <figure class="ad-card"><button type="button" class="ad-img js-tile" data-src="fotos/54a2e85b.jpg" data-cap="Samsung A15: vidro trincado → novo" data-msg="Samsung A15: vidro trincado → novo"><img src="fotos/54a2e85b.jpg" alt="Samsung A15: vidro trincado → novo" loading="lazy" width="720" height="1280"></button>
+          <figcaption><b>Samsung A15: vidro trincado → novo</b><span>Troca só do vidro, mantendo a frontal original de fábrica</span><a class="ad-cta js-svcmsg" data-msg="Samsung A15" href="#contato" target="_blank" rel="noopener">Quero um orçamento igual →</a></figcaption></figure>
+        <figure class="ad-card"><button type="button" class="ad-img js-tile" data-src="fotos/4c733c09.jpg" data-cap="Conector de carga: antes e depois" data-msg="Conector de carga: antes e depois"><img src="fotos/4c733c09.jpg" alt="Conector de carga: antes e depois" loading="lazy" width="720" height="1280"></button>
+          <figcaption><b>Conector de carga: antes e depois</b><span>Voltou a carregar no mesmo dia</span><a class="ad-cta js-svcmsg" data-msg="Conector de carga" href="#contato" target="_blank" rel="noopener">Quero um orçamento igual →</a></figcaption></figure>
+        <figure class="ad-card"><button type="button" class="ad-img js-tile" data-src="fotos/d0e38825.jpg" data-cap="Redmi: antes e depois" data-msg="Redmi: antes e depois"><img src="fotos/d0e38825.jpg" alt="Redmi: antes e depois" loading="lazy" width="720" height="1280"></button>
+          <figcaption><b>Redmi: antes e depois</b><span>Reparo completo na bancada</span><a class="ad-cta js-svcmsg" data-msg="Redmi" href="#contato" target="_blank" rel="noopener">Quero um orçamento igual →</a></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="videos" class="vids">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Veja na prática</span>
+        <h2>Direto da bancada</h2>
+        <p>Celular testado na frente do cliente antes de ir embora.</p>
+      </div>
+      <div class="vid-row">
+        <figure class="vid"><video src="videos/8bf6e5a2.mp4" poster="videos/8bf6e5a2.jpg" muted loop playsinline autoplay preload="metadata" controls></video><figcaption>Troca do vidro Samsung A15, testado na hora</figcaption></figure>
+        <figure class="vid"><video src="videos/02c8a8e0.mp4" poster="videos/02c8a8e0.jpg" muted loop playsinline autoplay preload="metadata" controls></video><figcaption>Samsung pronto para entrega</figcaption></figure>
+        <div class="vid-cta">
+          <b>Seu celular pode ser o próximo vídeo.</b>
+          <span>Manda a foto do problema e receba o orçamento em minutos.</span>
+          <a class="btn btn-zap js-zap" data-tipo="orcamento" href="#contato" target="_blank" rel="noopener">Pedir orçamento grátis</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Trabalhos realizados</span>
+        <h2>Mais de 22 mil celulares. Aqui vão alguns.</h2>
+        <p>Filtre pelo tipo de conserto. Toque em uma foto para ver maior e pedir o mesmo serviço.</p>
+      </div>
+      <div class="chips gfilters" role="group" aria-label="Filtrar trabalhos"><button type="button" class="chip fchip" aria-pressed="true" data-f="todos">Todos</button><button type="button" class="chip fchip" aria-pressed="false" data-f="tela">Tela</button><button type="button" class="chip fchip" aria-pressed="false" data-f="bateria">Bateria</button><button type="button" class="chip fchip" aria-pressed="false" data-f="carga">Carga</button><button type="button" class="chip fchip" aria-pressed="false" data-f="placa">Placa e flex</button><button type="button" class="chip fchip" aria-pressed="false" data-f="prontos">Prontos</button></div>
+      <div class="gal">
+        <button type="button" class="tile js-tile" data-cat="tela" data-src="fotos/7206d6f9.jpg" data-cap="Troca da frontal iPhone 12" data-msg="Troca da frontal iPhone 12"><img src="fotos/7206d6f9.jpg" alt="Troca da frontal iPhone 12" loading="lazy" width="720" height="1280"><span>Troca da frontal iPhone 12</span></button>
+        <button type="button" class="tile js-tile" data-cat="tela" data-src="fotos/f19f8c56.jpg" data-cap="Troca da frontal Samsung A06" data-msg="Troca da frontal Samsung A06"><img src="fotos/f19f8c56.jpg" alt="Troca da frontal Samsung A06" loading="lazy" width="720" height="1280"><span>Troca da frontal Samsung A06</span></button>
+        <button type="button" class="tile js-tile" data-cat="tela" data-src="fotos/27e8bf7b.jpg" data-cap="Samsung A13: frontal e desbloqueio" data-msg="Samsung A13: frontal e desbloqueio"><img src="fotos/27e8bf7b.jpg" alt="Samsung A13: frontal e desbloqueio" loading="lazy" width="720" height="1280"><span>Samsung A13: frontal e desbloqueio</span></button>
+        <button type="button" class="tile js-tile" data-cat="bateria" data-src="fotos/61c7ad78.jpg" data-cap="Troca de bateria Samsung A54" data-msg="Troca de bateria Samsung A54"><img src="fotos/61c7ad78.jpg" alt="Troca de bateria Samsung A54" loading="lazy" width="720" height="1280"><span>Troca de bateria Samsung A54</span></button>
+        <button type="button" class="tile js-tile" data-cat="bateria" data-src="fotos/9198db2d.jpg" data-cap="Troca de bateria iPhone SE" data-msg="Troca de bateria iPhone SE"><img src="fotos/9198db2d.jpg" alt="Troca de bateria iPhone SE" loading="lazy" width="720" height="1280"><span>Troca de bateria iPhone SE</span></button>
+        <button type="button" class="tile js-tile" data-cat="bateria" data-src="fotos/77a6091c.jpg" data-cap="Troca de bateria iPhone" data-msg="Troca de bateria iPhone"><img src="fotos/77a6091c.jpg" alt="Troca de bateria iPhone" loading="lazy" width="720" height="1280"><span>Troca de bateria iPhone</span></button>
+        <button type="button" class="tile js-tile" data-cat="bateria" data-src="fotos/a39c4038.jpg" data-cap="Troca de bateria Xiaomi" data-msg="Troca de bateria Xiaomi"><img src="fotos/a39c4038.jpg" alt="Troca de bateria Xiaomi" loading="lazy" width="720" height="1280"><span>Troca de bateria Xiaomi</span></button>
+        <button type="button" class="tile js-tile" data-cat="carga" data-src="fotos/7a1a9fde.jpg" data-cap="Placa de carga Samsung A54" data-msg="Placa de carga Samsung A54"><img src="fotos/7a1a9fde.jpg" alt="Placa de carga Samsung A54" loading="lazy" width="720" height="1280"><span>Placa de carga Samsung A54</span></button>
+        <button type="button" class="tile js-tile" data-cat="carga" data-src="fotos/59b7adff.jpg" data-cap="Troca do conector de carga" data-msg="Troca do conector de carga"><img src="fotos/59b7adff.jpg" alt="Troca do conector de carga" loading="lazy" width="720" height="1280"><span>Troca do conector de carga</span></button>
+        <button type="button" class="tile js-tile" data-cat="carga" data-src="fotos/a1ae4564.jpg" data-cap="Conector de carga Samsung" data-msg="Conector de carga Samsung"><img src="fotos/a1ae4564.jpg" alt="Conector de carga Samsung" loading="lazy" width="720" height="1280"><span>Conector de carga Samsung</span></button>
+        <button type="button" class="tile js-tile" data-cat="carga" data-src="fotos/ae8f9843.jpg" data-cap="Conector de carga na placa" data-msg="Conector de carga na placa"><img src="fotos/ae8f9843.jpg" alt="Conector de carga na placa" loading="lazy" width="720" height="1280"><span>Conector de carga na placa</span></button>
+        <button type="button" class="tile js-tile" data-cat="carga" data-src="fotos/5fe15df5.jpg" data-cap="Conector micro USB" data-msg="Conector micro USB"><img src="fotos/5fe15df5.jpg" alt="Conector micro USB" loading="lazy" width="720" height="1280"><span>Conector micro USB</span></button>
+        <button type="button" class="tile js-tile" data-cat="carga" data-src="fotos/3602234e.jpg" data-cap="Placa de carga USB-C" data-msg="Placa de carga USB-C"><img src="fotos/3602234e.jpg" alt="Placa de carga USB-C" loading="lazy" width="720" height="1280"><span>Placa de carga USB-C</span></button>
+        <button type="button" class="tile js-tile" data-cat="placa" data-src="fotos/7060837c.jpg" data-cap="Flex auricular iPhone 12" data-msg="Flex auricular iPhone 12"><img src="fotos/7060837c.jpg" alt="Flex auricular iPhone 12" loading="lazy" width="720" height="1280"><span>Flex auricular iPhone 12</span></button>
+        <button type="button" class="tile js-tile" data-cat="placa" data-src="fotos/90fb081c.jpg" data-cap="Troca do FPC na placa" data-msg="Troca do FPC na placa"><img src="fotos/90fb081c.jpg" alt="Troca do FPC na placa" loading="lazy" width="720" height="1280"><span>Troca do FPC na placa</span></button>
+        <button type="button" class="tile js-tile" data-cat="placa" data-src="fotos/f6f9ff18.jpg" data-cap="Troca do conector P2 (fone)" data-msg="Troca do conector P2 (fone)"><img src="fotos/f6f9ff18.jpg" alt="Troca do conector P2 (fone)" loading="lazy" width="720" height="1280"><span>Troca do conector P2 (fone)</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/0f326a88.jpg" data-cap="iPhone 11 Pro na bancada" data-msg="iPhone 11 Pro na bancada"><img src="fotos/0f326a88.jpg" alt="iPhone 11 Pro na bancada" loading="lazy" width="720" height="1280"><span>iPhone 11 Pro na bancada</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/e477ee87.jpg" data-cap="Reparo em iPhone" data-msg="Reparo em iPhone"><img src="fotos/e477ee87.jpg" alt="Reparo em iPhone" loading="lazy" width="720" height="1280"><span>Reparo em iPhone</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/2063ac96.jpg" data-cap="Reparo iPhone 11" data-msg="Reparo iPhone 11"><img src="fotos/2063ac96.jpg" alt="Reparo iPhone 11" loading="lazy" width="720" height="1280"><span>Reparo iPhone 11</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/2d6258db.jpg" data-cap="iPhone 11 pronto" data-msg="iPhone 11 pronto"><img src="fotos/2d6258db.jpg" alt="iPhone 11 pronto" loading="lazy" width="720" height="1280"><span>iPhone 11 pronto</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/414edb50.jpg" data-cap="iPhone entregue funcionando" data-msg="iPhone entregue funcionando"><img src="fotos/414edb50.jpg" alt="iPhone entregue funcionando" loading="lazy" width="720" height="1280"><span>iPhone entregue funcionando</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/7465b6af.jpg" data-cap="Motorola pronto" data-msg="Motorola pronto"><img src="fotos/7465b6af.jpg" alt="Motorola pronto" loading="lazy" width="720" height="1280"><span>Motorola pronto</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/217d03b5.jpg" data-cap="Galaxy Note 20 Ultra" data-msg="Galaxy Note 20 Ultra"><img src="fotos/217d03b5.jpg" alt="Galaxy Note 20 Ultra" loading="lazy" width="720" height="1280"><span>Galaxy Note 20 Ultra</span></button>
+        <button type="button" class="tile js-tile" data-cat="prontos" data-src="fotos/1394cb90.jpg" data-cap="Sistema restaurado" data-msg="Sistema restaurado"><img src="fotos/1394cb90.jpg" alt="Sistema restaurado" loading="lazy" width="720" height="1280"><span>Sistema restaurado</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tabela" class="tabela">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Todos os serviços</span>
+        <h2>Lista completa de serviços</h2>
+        <p>Toque em qualquer serviço para pedir o orçamento direto no WhatsApp. O valor depende do modelo, por isso o orçamento é sempre grátis e sem compromisso.</p>
+      </div>
+      <div class="cats">
+      <div class="cat">
+        <h3>Tela</h3>
+        <ul class="svc-list">
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Tela iPhone">
+            <span class="svc-txt"><b>Troca de Tela iPhone</b><span>Troca de tela de iPhone quebrada, trincada, com mancha ou sem toque. Orçamento grátis pelo WhatsApp e garantia no serviço.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Tela Samsung">
+            <span class="svc-txt"><b>Troca de Tela Samsung</b><span>Tela de Samsung Galaxy (linha A, M, S e outras) quebrada ou sem imagem. Troca rápida com peça de qualidade e garantia.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Tela Motorola">
+            <span class="svc-txt"><b>Troca de Tela Motorola</b><span>Troca de tela para Moto G, Moto E, Edge e outros modelos. Orçamento grátis e serviço com garantia.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Tela Xiaomi, Redmi e Poco">
+            <span class="svc-txt"><b>Troca de Tela Xiaomi, Redmi e Poco</b><span>Tela quebrada, trincada ou sem toque em Xiaomi, Redmi e Poco. Avaliação grátis e troca com garantia.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Tela Realme, Infinix e Oppo">
+            <span class="svc-txt"><b>Troca de Tela Realme, Infinix e Oppo</b><span>Troca de tela para Realme, Infinix, Oppo e outras marcas. Consulte o seu modelo pelo WhatsApp.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Tampa e Vidro Traseiro">
+            <span class="svc-txt"><b>Troca de Tampa e Vidro Traseiro</b><span>Tampa traseira quebrada ou solta? Fazemos a troca e deixamos seu celular com cara de novo.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>Bateria e Carga</h3>
+        <ul class="svc-list">
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Bateria iPhone">
+            <span class="svc-txt"><b>Troca de Bateria iPhone</b><span>iPhone descarregando rápido, desligando sozinho ou com a saúde da bateria baixa. Troca com bateria nova e garantia.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Bateria Android">
+            <span class="svc-txt"><b>Troca de Bateria Android</b><span>Bateria viciada, estufada ou que não segura carga em Samsung, Motorola, Xiaomi e outras marcas.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Conector de Carga">
+            <span class="svc-txt"><b>Troca de Conector de Carga</b><span>Celular não carrega, carrega só em uma posição ou o cabo fica frouxo. Troca do conector com garantia.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Celular Não Carrega - Diagnóstico">
+            <span class="svc-txt"><b>Celular Não Carrega - Diagnóstico</b><span>Descobrimos se o problema é no cabo, no conector, na bateria ou na placa, antes de qualquer gasto.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>Reparos</h3>
+        <ul class="svc-list">
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Celular Não Liga - Avaliação">
+            <span class="svc-txt"><b>Celular Não Liga - Avaliação</b><span>Celular apagou, fica na logo ou reinicia sozinho? Traga para avaliação. Você só paga se aprovar o serviço.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Celular Molhado - Limpeza e Recuperação">
+            <span class="svc-txt"><b>Celular Molhado - Limpeza e Recuperação</b><span>Caiu na água, no vaso ou na piscina? Desligue e traga o quanto antes. Fazemos limpeza e tentativa de recuperação.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Reparo de Câmera Traseira e Frontal">
+            <span class="svc-txt"><b>Reparo de Câmera Traseira e Frontal</b><span>Câmera embaçada, tremendo, com mancha ou que não abre. Troca de câmera e de lente.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Reparo de Alto-falante e Microfone">
+            <span class="svc-txt"><b>Reparo de Alto-falante e Microfone</b><span>Som baixo, chiando ou ninguém te escuta nas ligações? Reparo de alto-falante, auricular e microfone.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Botões Liga e Volume">
+            <span class="svc-txt"><b>Troca de Botões Liga e Volume</b><span>Botão afundado, travado ou que não responde. Troca rápida com garantia.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Troca de Lente da Câmera">
+            <span class="svc-txt"><b>Troca de Lente da Câmera</b><span>Lente da câmera trincada ou quebrada. Troca rápida que devolve a nitidez das suas fotos.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>Sistema</h3>
+        <ul class="svc-list">
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Formatação e Atualização de Sistema">
+            <span class="svc-txt"><b>Formatação e Atualização de Sistema</b><span>Celular lento, travando, cheio de vírus ou de propaganda. Formatação, limpeza e atualização.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Backup e Transferência de Dados">
+            <span class="svc-txt"><b>Backup e Transferência de Dados</b><span>Passamos fotos, contatos e WhatsApp do celular antigo para o novo com segurança.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+        </ul>
+      </div>
+      <div class="cat">
+        <h3>Acessórios</h3>
+        <ul class="svc-list">
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Película de Vidro 3D - Aplicação na Hora">
+            <span class="svc-txt"><b>Película de Vidro 3D - Aplicação na Hora</b><span>Película para iPhone, Samsung, Motorola, Xiaomi e outros, aplicada na hora sem bolhas.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+          <li><a class="svc-row js-row" href="#contato" target="_blank" rel="noopener" data-nome="Capinhas e Carregadores">
+            <span class="svc-txt"><b>Capinhas e Carregadores</b><span>Capinhas, carregadores, cabos e fones para diversos modelos. Consulte disponibilidade pelo WhatsApp.</span></span>
+            <span class="svc-go" aria-hidden="true">Pedir orçamento →</span>
+          </a></li>
+        </ul>
+      </div>
       </div>
     </div>
   </section>
@@ -448,6 +754,28 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
     </div>
   </section>
 
+  <section id="local" class="local">
+    <div class="wrap local-grid">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="eyebrow">Onde estamos</span>
+        <h2>Venha até a loja</h2>
+        <p>Atendimento no bairro Eldorado, em Porto Velho. Procure o portão branco no muro preto, número 5911. Se preferir, eu busco o seu celular.</p>
+        <div class="cta-row" style="margin-top:14px">
+          <a class="btn btn-zap" href="https://www.google.com/maps/search/?api=1&amp;query=Adrielson+Celulares+Rua+das+Cam%C3%A9lias+5911+Porto+Velho" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+      <div class="local-side">
+      <img class="fachada" src="fotos/fachada.jpg" alt="Fachada da Adrielson Celulares, portão branco no muro preto, número 5911" loading="lazy" width="1000" height="666">
+      <div class="facts">
+        <div class="fact"><span>Endereço</span><strong>Rua das Camélias, 5911<br>Eldorado · Porto Velho – RO<br>CEP 76811-864</strong></div>
+        <div class="fact"><span>Horário</span><strong>Seg. a sáb., 7:30 às 18:00</strong></div>
+        <div class="fact"><span>WhatsApp</span><strong>(69) 98469-2882</strong></div>
+        <div class="fact"><span>Instagram</span><strong><a href="https://www.instagram.com/adrielson_celulares_ro/" target="_blank" rel="noopener">@adrielson_celulares_ro</a></strong></div>
+      </div>
+      </div>
+    </div>
+  </section>
+
   <section id="contato" style="padding-top:0">
     <div class="wrap">
       <div class="final">
@@ -467,7 +795,20 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
   </section>
 </main>
 
-<footer><div class="wrap">© 2026 Adrielson Celulares · Porto Velho, Rondônia</div></footer>
+<footer><div class="wrap foot"><span>© 2026 Adrielson Celulares · Assistência técnica de celulares</span><span>Rua das Camélias, 5911 · Eldorado · Porto Velho – RO · (69) 98469-2882</span></div></footer>
+
+<div class="lb" id="lb" hidden>
+  <div class="lb-box" role="dialog" aria-modal="true" aria-labelledby="lb-cap">
+    <button type="button" class="lb-x" id="lb-x" aria-label="Fechar">×</button>
+    <img id="lb-img" alt="">
+    <div class="lb-foot"><b id="lb-cap"></b><a class="btn btn-zap" id="lb-go" href="#contato" target="_blank" rel="noopener">Quero esse serviço</a></div>
+  </div>
+</div>
+
+<nav class="mbar" aria-label="Atalhos de contato">
+  <a class="js-zap" data-tipo="orcamento" href="#contato" target="_blank" rel="noopener">Orçamento grátis</a>
+  <a class="js-zap alt" data-tipo="busca" href="#contato" target="_blank" rel="noopener">Buscar meu celular</a>
+</nav>
 
 <a class="float-zap js-zap" href="#contato" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
   <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg>
@@ -489,6 +830,40 @@ footer{padding-block:28px 100px;color:var(--muted);font-size:14px}
     document.querySelectorAll(".js-zap").forEach(a => { a.removeAttribute("target"); });
     numEl.textContent = "WhatsApp: número em breve";
   }
+  // Galeria: filtro + lightbox com pedido do mesmo serviço
+  (function(){
+    const tiles=[...document.querySelectorAll(".js-tile")];
+    document.querySelectorAll(".fchip").forEach(b=>b.addEventListener("click",()=>{
+      document.querySelectorAll(".fchip").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));
+      const f=b.dataset.f;
+      document.querySelectorAll(".gal .tile").forEach(t=>{t.hidden=!(f==="todos"||t.dataset.cat===f);});
+    }));
+    const lb=document.getElementById("lb"),img=document.getElementById("lb-img"),cap=document.getElementById("lb-cap"),go=document.getElementById("lb-go");
+    let last=null;
+    function open(t){
+      last=t; img.src=t.dataset.src; img.alt=t.dataset.cap; cap.textContent=t.dataset.cap;
+      const m="Olá Adrielson! Vi no seu site o trabalho \""+t.dataset.msg+"\" e quero um orçamento parecido. Meu celular é um (modelo).";
+      if(WHATSAPP){go.href="https://wa.me/55"+WHATSAPP+"?text="+encodeURIComponent(m);}
+      lb.hidden=false; document.getElementById("lb-x").focus();
+    }
+    function close(){lb.hidden=true; img.src=""; if(last) last.focus();}
+    tiles.forEach(t=>t.addEventListener("click",()=>open(t)));
+    document.getElementById("lb-x").addEventListener("click",close);
+    lb.addEventListener("click",e=>{if(e.target===lb) close();});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!lb.hidden) close();});
+    document.querySelectorAll(".js-svcmsg").forEach(a=>{
+      const m="Olá Adrielson! Vi o antes e depois do "+a.dataset.msg+" no seu site e quero um orçamento. Meu celular é um (modelo).";
+      if(WHATSAPP) a.href="https://wa.me/55"+WHATSAPP+"?text="+encodeURIComponent(m);
+    });
+  })();
+
+  // Lista completa: mensagem com o nome do serviço
+  document.querySelectorAll(".js-row").forEach(a=>{
+    const t="Olá Adrielson! Vi seu site e quero um orçamento de: "+a.dataset.nome+". Meu celular é um (modelo).";
+    if(WHATSAPP) a.href="https://wa.me/55"+WHATSAPP+"?text="+encodeURIComponent(t);
+    else a.removeAttribute("target");
+  });
+
   // Serviços: mensagem pronta com marca + problema
   (function(){
     let marca="";
